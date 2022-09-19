@@ -1,0 +1,23 @@
+<div>
+<ion-item>
+  <ion-label position="floating">
+    Digite a tarefa:
+  </ion-label>
+  <ion-input [(ngModel)] ="novaTarefa"></ion-input>
+</ion-item>
+<ion-button expand="full" (click)="adicionarTarefa()">
+Inserir
+</ion-button>
+
+<ion-list>
+  <ion-item-group *ngFor="let tarefa of tarefas; let casinha = index">
+    <ion-item-sliding (ionSwipe)="apagarTarefa(casinha)">
+    <ion-item>
+      <ion-label>{{ tarefa }}</ion-label>
+    </ion-item>
+    <ion-item-options side="end">
+    </ion-item-options>
+  </ion-item-sliding>
+  </ion-item-group>
+</ion-list>
+</div>
