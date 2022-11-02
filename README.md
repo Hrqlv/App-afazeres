@@ -6,8 +6,5 @@
  </h2>
 <br>
 <p align="center"> 
-    Descrição:
-    <br>
-    Projeto realizado para listar os deveres que ira fazer no dia.
+    Projeto realizado para listar os deveres que ira fazer no dia. Anotar os deveres, deixar organizado o seu dia a dia.
 </p
-<hr>
